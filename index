@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo Mario Bros</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Card explicativo -->
+  <div id="introCard" class="intro-card">
+    <h2>Bem-vindo ao Jogo DinoMario!</h2>
+    <p>Instruções:</p>
+    <ul>
+      <li>Clique em <strong>Espaço</strong> para pular.</li>
+      <li>Evite os obstáculos para continuar jogando!</li>
+    </ul>
+    <button id="startBtn">Iniciar Jogo</button>
+  </div>
+
+  <div class="game-container">
+    <div class="score-board">
+      <h2>Pontuação: <span id="score">0</span></h2>
+      <div class="recorde">
+        <h3>Recorde: <span id="highScore">0</span></h3>
+      </div>      
+      <button id="restartBtn" style="display: none;">Reiniciar</button>
+    </div>
+    <div id="mario" class="mario"></div>
+    <div id="gameOverMessage" class="game-over">Game Over</div>
+    <div class="obstaculo"></div>
+    <div class="grama"></div>
+    <div class="chao"></div>
+  </div>
+  <script src="sons.js"></script>
+  <script src="localstorage.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
